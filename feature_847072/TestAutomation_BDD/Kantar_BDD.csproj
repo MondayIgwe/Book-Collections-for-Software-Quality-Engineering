@@ -1,0 +1,676 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+	  <NoWarn>CA1822, CS8602, CS8600, CS8618, CS8619, CS8601</NoWarn>
+	  <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\SFA\MasterData\**" />
+    <Compile Remove="Features\TPM\PromoPlan\Regression\**" />
+    <EmbeddedResource Remove="Features\SFA\MasterData\**" />
+    <EmbeddedResource Remove="Features\TPM\PromoPlan\Regression\**" />
+    <None Remove="Features\SFA\MasterData\**" />
+    <None Remove="Features\TPM\PromoPlan\Regression\**" />
+    <SpecFlowFeatureFiles Remove="Features\SFA\MasterData\**" />
+    <SpecFlowFeatureFiles Remove="Features\TPM\PromoPlan\Regression\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\MasterData\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoPlan\Regression\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM 8.2 Regr\TestCase_197396.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM 8.2 Regr\TestCase_565870 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM 8.2 Regr\TestCase_769049 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_197396 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_199918 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_223639 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_470101 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_470321 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_613794 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\FRM Re-Scoped Regression\TestCase_715199 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FRM\GUI Configurator\Testcase_317411 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\Inspired\Benedict - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\IBPDocuments\TC_821647 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\IBPDocuments\TestCase_615640 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\RescopedNightlyRegression\TC_278517 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_387297.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_536253 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_837097 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\RescopedWeeklyRegression\TestCase_846635 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SA\NightlyRunsRecoped\TestCase353834 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SA\NightlyRunsRecoped\TestCase559339 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\AdvancedPricing\TC_465360_Template - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\AdvancedPricingBooks\TestCase_541343 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\Assortments\TC_408877.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\Assortments\TestCase_572776 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\BudgetGroup\TestCase_641932 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\CustomerMaster\TestCase_534985 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SFA\Rescoped\TestCase_491850.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\Regression\TestCase_443881.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\Smoke\TestCase_339953 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\Smoke\TestCase_339954 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_335200 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_335200.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\PLAN\IBP\IBPDocuments\TC_846436.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_344836 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_433363 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_442993 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_451221 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_457489 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\FundsAndRules\TestCase_474215 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\Smoke\TestCase_290592 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\Smoke\TestCase_344794 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\Smoke\TestCase_344841.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TC783174 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TestCase_344841 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TestCase_344842 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TestCase_347586 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TestCase_443881.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoActions\TestCase_522811 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoPlan\Smoke\TestCase_458045.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoPlan\TC902169 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoPlan\TestCase_458457 - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TPM\PromoPlan\TestCase_614800 - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="RestSharp" Version="107.1.2" />
+    <PackageReference Include="Selenium.Support" Version="4.1.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
+    <PackageReference Include="nunit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="WebDriverManager" Version="2.12.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+    <Folder Include="Features\FRM\FRM 8.2 Smoke\" />
+    <Folder Include="Features\SFA\Rescoped\CustomerMaster\" />
+    <Folder Include="Features\SFA\Rescoped\DiscountLists\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\FRM\FRM 8.2 Regr\TestCase_769049.feature.cs">
+      <DependentUpon>TestCase_769049.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM 8.2 Regr\TestCase_728481.feature.cs">
+      <DependentUpon>TestCase_728481.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM 8.2 Regr\TestCase_565870.feature.cs">
+      <DependentUpon>TestCase_565870.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_228230.feature.cs">
+      <DependentUpon>TestCase_228230.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_470321.feature.cs">
+      <DependentUpon>TestCase_470321.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209497.feature.cs">
+      <DependentUpon>TestCase_209497.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_360161.feature.cs">
+      <DependentUpon>TestCase_360161.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209599.feature.cs">
+      <DependentUpon>TestCase_209599.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_359094.feature.cs">
+      <DependentUpon>TestCase_359094.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_237856.feature.cs">
+      <DependentUpon>TestCase_237856.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_425033.feature.cs">
+      <DependentUpon>TestCase_425033.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_220548.feature.cs">
+      <DependentUpon>TestCase_220548.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_200016.feature.cs">
+      <DependentUpon>TestCase_200016.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_197396.feature.cs">
+      <DependentUpon>TestCase_197396.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_200276.feature.cs">
+      <DependentUpon>TestCase_200276.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209953.feature.cs">
+      <DependentUpon>TestCase_209953.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_224091.feature.cs">
+      <DependentUpon>TestCase_224091.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_319810.feature.cs">
+      <DependentUpon>TestCase_319810.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_221151.feature.cs">
+      <DependentUpon>TestCase_221151.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_223528.feature.cs">
+      <DependentUpon>TestCase_223528.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_199929.feature.cs">
+      <DependentUpon>TestCase_199929.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Nightly Automation\TestCase_715197.feature.cs">
+      <DependentUpon>TestCase_715197.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\FRM Re-Scoped Regression\TestCase_715199.feature.cs">
+      <DependentUpon>TestCase_715199.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FRM\GUI Configurator\Testcase_403252.feature.cs">
+      <DependentUpon>Testcase_403252.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\Inspired\Siya.feature.cs">
+      <DependentUpon>Siya.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\IBPDocuments\TestCase_606464.feature.cs">
+      <DependentUpon>TestCase_606464.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\IBPDocuments\TestCase_846615.feature.cs">
+      <DependentUpon>TestCase_846615.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\IBPDocuments\TestCase_743767.feature.cs">
+      <DependentUpon>TestCase_743767.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\IBPDocuments\TestCase_615640.feature.cs">
+      <DependentUpon>TestCase_615640.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_517178.feature.cs">
+      <DependentUpon>TestCase_517178.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_594464.feature.cs">
+      <DependentUpon>TestCase_594464.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SA\NightlyRunsRecoped\TestCase352730.feature.cs">
+      <DependentUpon>TestCase352730.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SA\NightlyRunsRecoped\TestCase353834.feature.cs">
+      <DependentUpon>TestCase353834.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\AdvancedPricingActions\TestCase_464843.feature.cs">
+      <DependentUpon>TestCase_464843.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\AdvancedPricingBooks\TestCase_417233.feature.cs">
+      <DependentUpon>TestCase_417233.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\Assortments\TestCase_506646.feature.cs">
+      <DependentUpon>TestCase_506646.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\BudgetGroup\TestCase_645612.feature.cs">
+      <DependentUpon>TestCase_645612.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\CustomerMaster\TestCase_534986.feature.cs">
+      <DependentUpon>TestCase_534986.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\SalesForce\TestCase_533020.feature.cs">
+      <DependentUpon>TestCase_533020.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Regression\TestCase_443892.feature.cs">
+      <DependentUpon>TestCase_443892.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Smoke\TestCase_334984.feature.cs">
+      <DependentUpon>TestCase_334984.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Smoke\TestCase_339954.feature.cs">
+      <DependentUpon>TestCase_339954.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_339602.feature.cs">
+      <DependentUpon>TestCase_339602.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_335200.feature.cs">
+      <DependentUpon>TestCase_335200.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Smoke\TestCase_335198.feature.cs">
+      <DependentUpon>TestCase_335198.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Smoke\TestCase_339953.feature.cs">
+      <DependentUpon>TestCase_339953.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\Smoke\TestCase_344836.feature.cs">
+      <DependentUpon>TestCase_344836.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_443881.feature.cs">
+      <DependentUpon>TestCase_443881.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_433363.feature.cs">
+      <DependentUpon>TestCase_433363.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_474245.feature.cs">
+      <DependentUpon>TestCase_474245.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_474215.feature.cs">
+      <DependentUpon>TestCase_474215.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_451221.feature.cs">
+      <DependentUpon>TestCase_451221.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_451183.feature.cs">
+      <DependentUpon>TestCase_451183.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\FundsAndRules\TestCase_456215.feature.cs">
+      <DependentUpon>TestCase_456215.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\Smoke\TestCase_345334.feature.cs">
+      <DependentUpon>TestCase_345334.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\Smoke\TestCase_290592.feature.cs">
+      <DependentUpon>TestCase_290592.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\Smoke\TestCase_344794.feature.cs">
+      <DependentUpon>TestCase_344794.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\Smoke\TestCase_291097.feature.cs">
+      <DependentUpon>TestCase_291097.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_458044.feature.cs">
+      <DependentUpon>TestCase_458044.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_437999.feature.cs">
+      <DependentUpon>TestCase_437999.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_344841.feature.cs">
+      <DependentUpon>TestCase_344841.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_466025.feature.cs">
+      <DependentUpon>TestCase_466025.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_344842.feature.cs">
+      <DependentUpon>TestCase_344842.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_428189.feature.cs">
+      <DependentUpon>TestCase_428189.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TestCase_522811.feature.cs">
+      <DependentUpon>TestCase_522811.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SFA\Rescoped\Assortments\TC_408877.feature.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoActions\TC783174.feature.cs">
+      <DependentUpon>TC783174.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoPlan\Smoke\TestCase_291936.feature.cs">
+      <DependentUpon>TestCase_291936.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoPlan\TestCase_458045.feature.cs">
+      <DependentUpon>TestCase_458045.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoPlan\TestCase_458457.feature.cs">
+      <DependentUpon>TestCase_458457.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoPlan\TestCase_466863.feature.cs">
+      <DependentUpon>TestCase_466863.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TPM\PromoPlan\TestCase_614800.feature.cs">
+      <DependentUpon>TestCase_614800.feature</DependentUpon>
+    </Compile>
+    <Compile Update="StepDefinitions\SFA\SFADiscountListStepDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StepDefinitions\SFA\SFAAdvancedPricingActionsStepDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StepDefinitions\SFA\SFACustomerMasterStepDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM 8.2 Regr\TestCase_820152.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM 8.2 Regr\TestCase_226346.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM 8.2 Regr\TestCase_769049.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM 8.2 Regr\TestCase_728481.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM 8.2 Regr\TestCase_565870.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_228230.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_470435.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_470394.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_470101.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_470321.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209497.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_226986.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_360161.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209599.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_359094.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_237856.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_425033.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_220548.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_200016.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_197396.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_200276.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_209953.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_224091.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_319810.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_221151.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_223528.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_199929.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Nightly Automation\TestCase_715197.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\FRM Re-Scoped Regression\TestCase_715199.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FRM\GUI Configurator\Testcase_403252.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\Inspired\Siya.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\IBPDocuments\TestCase_606464.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\IBPDocuments\TestCase_846615.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\IBPDocuments\TestCase_743767.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_837004.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_837097.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_594464.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\RescopedNightlyRegression\TestCase_536253.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\RescopedWeeklyRegression\TestCase_847072.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SA\NightlyRunsRecoped\TestCase352730.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SA\NightlyRunsRecoped\TestCase353834.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\AdvancedPricingActions\TestCase_453830.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\AdvancedPricingActions\TestCase_464843.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\AdvancedPricingBooks\TestCase_417233.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\Assortments\TC_408877.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\PLAN\IBP\IBPDocuments\TestCase_615640.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\Assortments\TestCase_506646.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\BudgetGroup\TestCase_645612.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\CustomerMaster\TestCase_534986.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\SalesForce\TestCase_533020.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SFA\Rescoped\SalesForce\TestCase_535041.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Regression\TestCase_443892.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Smoke\TestCase_334984.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Smoke\TestCase_339954.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_339602.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_335200.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Smoke\TestCase_335198.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Smoke\TestCase_339953.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\Smoke\TestCase_344836.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_443881.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_433363.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_474245.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_474215.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_451221.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_451183.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\FundsAndRules\TestCase_456215.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_345334.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_291973.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_291923.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_291091.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_290592.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_344794.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\Smoke\TestCase_291097.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_458044.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_437999.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_344841.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_466025.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_344842.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_428189.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TestCase_522811.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoActions\TC783174.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoPlan\Smoke\TestCase_291936.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoPlan\TestCase_458045.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoPlan\TestCase_466863.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoPlan\TestCase_458457.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TPM\PromoPlan\TestCase_614800.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
+</Project>
