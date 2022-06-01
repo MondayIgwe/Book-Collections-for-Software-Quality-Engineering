@@ -1,0 +1,10 @@
+.vscode/
+bin/
+obj/
+.vs/
+*/Reports/
+global.json
+Reports/
+[Ff]eatures/*/*/*/*.feature.cs
+[Ff]eatures/*/*/*.feature.cs
+[Ff]eatures/*/*.feature.cs
