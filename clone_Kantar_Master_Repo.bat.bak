@@ -1,0 +1,6 @@
+echo Cloning Kantar master repo
+git clone https://kantarware.visualstudio.com/KC-XTEL/_git/TestAutomation_BDD
+pause
+echo Completed.....
+pause
+exit
