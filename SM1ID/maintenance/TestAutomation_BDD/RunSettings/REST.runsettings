@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+	  <!-- Database connected to this URL is KC-EMEA-SQDB-XTELAUTOM82-DEV-02-->
+    <Parameter name="URL" value="https://to-pdi.salesperformanceplatform.com/xtelsp-autom/web/" />
+	  <Parameter name="NoBrowser" value="true"/>
+	  <Parameter name="Regression" value="false"/>
+  </TestRunParameters>
+	
+</RunSettings>

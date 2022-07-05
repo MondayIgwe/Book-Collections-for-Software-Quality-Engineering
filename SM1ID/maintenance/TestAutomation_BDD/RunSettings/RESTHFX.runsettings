@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+    <Parameter name="URL" value="https://to-pdi.salesperformanceplatform.com/xtelsp-automhfx/web/" />
+	  <Parameter name="NoBrowser" value="true"/>
+	  <Parameter name="Regression" value="false"/>
+	  
+  </TestRunParameters>
+
+</RunSettings>

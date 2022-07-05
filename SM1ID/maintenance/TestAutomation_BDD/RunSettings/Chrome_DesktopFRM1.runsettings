@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+	  <!-- Database connected to this Environment is XTEL_FRM-->
+    <Parameter name="URL" value="https://kc-emea-aks-xtel-dev-02.salesperformanceplatform.com/frm1/web/SM1V6/SM1.aspx?DBG=1" />
+	  <Parameter name="Browser" value="Chrome" />
+	  <Parameter name="Regression" value="true" />
+	  
+  </TestRunParameters>
+	<NUnit>
+		<NumberOfTestWorkers>4</NumberOfTestWorkers>
+		<DefaultTestNamePattern>{m}()</DefaultTestNamePattern>
+	</NUnit>
+</RunSettings>

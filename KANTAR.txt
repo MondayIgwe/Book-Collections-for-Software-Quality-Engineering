@@ -1,0 +1,45 @@
+$(System.DefaultWorkingDirectory)/_Automation_BDD_Staging_Build/drop/RunSettings/Chrome_Desktop$(Environment)_NoParallel.runsettings
+
+//div[@sm1-id='GridContainer']//following::div[contains(@class,'checker-on')]
+
+Then the user validates that the 'User Code Textbox' with value '<CustomerFilters>' is displayed
+	Then the user validates that the 'User Code Textbox' is visible
+
+
+//span[text()='{label}']/parent::div[contains(@class,'header')]
+
+//span[text()=\"" + label + "\"]/ancestor:: div[contains(@class,'sm1-field')]//*[contains(@id,'inputEl')]
+
+
+        public static readonly AbstractedBy AcceptButton = AbstractedBy.Xpath("Accept Button", "//a[@sm1-id='ACTION_ACCEPT']");
+
+        public static AbstractedBy LinksContainingBySm1Id(string sm1Id) => AbstractedBy.Xpath("Button Acton link", "//a[contains(@sm1-id,'ACTION_"+sm1Id+"')]");
+
+//div[text()='" + value + "']
+, "//*[text()='" + text + "']")
+
+
+
+     /// <summary> 
+        /// Logs the current user out
+        /// </summary>
+        public void Logout()
+        {
+            Selenium.Click(NavigationMenu.KantarUserButton);
+            Selenium.Click(NavigationMenu.KantarLogout("Logout"));   
+        }
+
+   public static AbstractedBy KantarLogout(string Logout) => AbstractedBy.Xpath("Kantar Logout", $"//div[@sm1-id='homeToolbarLOGOUTBTN']//span[text()='{Logout}']");
+
+     /// <summary> 
+        /// Ensures that IBP PLAN Document is NOT SAVED after editing the grid table,
+        /// Prevents locked document for the next running test script during runtime
+        /// If the close icon is true, click it select NO on the SAVE popup window
+        /// </summary>
+https://kantarware.visualstudio.com/KC-XTEL/_git/TestAutomation_BDD/pullrequest/188271?_a=files&path=%2FStepDefinitions%2FGrids%2FCommon%2FGridsValidationStepDefinitions.cs&discussionId=1119009
+
+====== hotFix ====
+https://kc-emea-aks-xtel-dev-02.salesperformanceplatform.com/xtelsp-automhfx/web/SM1V6/SM1.aspx?DBG=1
+
+===Dev====
+https://kc-emea-aks-xtel-dev-02.salesperformanceplatform.com/xtelsp-automhfx/web/SM1V6/SM1.aspx?DBG=1

@@ -1,0 +1,3389 @@
+{
+    "Pages": [
+        {
+            "Name": "Calendar Page",
+            "Locators": [
+                {
+                    "LogicalName": "Today Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-layer x-datepicker-default')][not(contains(@style,'none'))]//span[text()='Today']"
+                    },
+                    "ByToString": "//div[contains(@class,'x-layer x-datepicker-default')][not(contains(@style,'none'))]//span[text()='Today']"
+                },
+                {
+                    "LogicalName": "Date Calendar Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='dtpDocDate']//div[contains(@id,'trigger-picker')]"
+                    },
+                    "ByToString": "//div[@sm1-id='dtpDocDate']//div[contains(@id,'trigger-picker')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[@data-qtip='Choose Month']"
+                    },
+                    "ByToString": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[@data-qtip='Choose Month']"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[@data-qtip='Choose Month']//span[text()]"
+                    },
+                    "ByToString": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[@data-qtip='Choose Month']//span[text()]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class = 'x-monthpicker-yearnav']//a[@data-ref='prevEl']"
+                    },
+                    "ByToString": "//div[@class = 'x-monthpicker-yearnav']//a[@data-ref='prevEl']"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class = 'x-monthpicker-yearnav']//a[@data-ref='nextEl']"
+                    },
+                    "ByToString": "//div[@class = 'x-monthpicker-yearnav']//a[@data-ref='nextEl']"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class, 'sm1-startDate')]"
+                    },
+                    "ByToString": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class, 'sm1-startDate')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class,'sm1-endDate')]"
+                    },
+                    "ByToString": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class,'sm1-endDate')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class, 'sm1-startDate')][contains(@class,'focused')]"
+                    },
+                    "ByToString": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class, 'sm1-startDate')][contains(@class,'focused')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class,'sm1-endDate')][contains(@class,'focused')]"
+                    },
+                    "ByToString": "//div[@sm1-id]//div[contains(@data-componentid,'sm1dateperiod')]//input[contains(@class,'sm1-endDate')][contains(@class,'focused')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-daterangepicker-popup' ) and not(contains(@style,'display: none'))]//div[contains(@class,'x-panel-body')]//span[contains(text(),'OK')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-daterangepicker-popup' ) and not(contains(@style,'display: none'))]//div[contains(@class,'x-panel-body')]//span[contains(text(),'OK')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-daterangepicker-popup' )][not(contains(@style,'display: none'))]//div[contains(@class,'monthpicker')]//span[contains(text(),'OK')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-daterangepicker-popup' )][not(contains(@style,'display: none'))]//div[contains(@class,'monthpicker')]//span[contains(text(),'OK')]"
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-daterangepicker-popup' ) and not(contains(@style,'display: none'))]//div[contains(@class,'x-toolbar-docked-bottom')]//span[contains(text(),'OK')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-daterangepicker-popup' ) and not(contains(@style,'display: none'))]//div[contains(@class,'x-toolbar-docked-bottom')]//span[contains(text(),'OK')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[text()='{month}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "month",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//a[text()='{year}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "year",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup') and not(contains(@style,'none'))]//td[contains(@aria-label,'{month}')]//div[text()='{day}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "month",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "day",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@class = 'x-monthpicker-item x-monthpicker-year']//a)[{yearPosition}]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "yearPosition",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class = 'x-monthpicker-item x-monthpicker-year']//a[text() = '{year}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "year",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = '{sm1Id}']//input[@data-ref = 'startDtpEl']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "sm1Id",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = '{sm1Id}']//input[@data-ref = 'endDtpEl']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "sm1Id",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class = 'x-monthpicker-item x-monthpicker-year']//a"
+                    },
+                    "Arguments": []
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class='x-panel sm1-daterangepicker-popup x-layer x-panel-default x-border-box']"
+                    },
+                    "Arguments": []
+                }
+            ]
+        },
+        {
+            "Name": "GenericElementsPage",
+            "Locators": [
+                {
+                    "LogicalName": "Add Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[contains(@class, 'toolbar-add')]/ancestor::span[@sm1-id = 'AddButton'][@aria-hidden='false']//span[@data-ref='btnWrap']"
+                    },
+                    "ByToString": "//span[contains(@class, 'toolbar-add')]/ancestor::span[@sm1-id = 'AddButton'][@aria-hidden='false']//span[@data-ref='btnWrap']"
+                },
+                {
+                    "LogicalName": "Checked Box",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//img[@chkvalue='true']"
+                    },
+                    "ByToString": "//img[@chkvalue='true']"
+                },
+                {
+                    "LogicalName": "Filter Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[contains(@class,'x-btn-icon-el-default-toolbar-small') and contains(@style,'filter')]"
+                    },
+                    "ByToString": "//span[contains(@class,'x-btn-icon-el-default-toolbar-small') and contains(@style,'filter')]"
+                },
+                {
+                    "LogicalName": "Calendar Header",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-panel sm1-daterangepicker-popup')  and contains(@style,'width')]//a[@data-qtip='Choose Month']//span[@data-ref='btnInnerEl']"
+                    },
+                    "ByToString": "//div[contains(@class,'x-panel sm1-daterangepicker-popup')  and contains(@style,'width')]//a[@data-qtip='Choose Month']//span[@data-ref='btnInnerEl']"
+                },
+                {
+                    "LogicalName": "Calendar Month Picker Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@id,'monthpicker')]//span[contains(text(),'OK')]"
+                    },
+                    "ByToString": "//div[contains(@id,'monthpicker')]//span[contains(text(),'OK')]"
+                },
+                {
+                    "LogicalName": "Refresh Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[(@sm1-id='ACTION_FETCH' or @sm1-id='ACTION_refresh') and @aria-hidden='false']"
+                    },
+                    "ByToString": "//a[(@sm1-id='ACTION_FETCH' or @sm1-id='ACTION_refresh') and @aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "Remove Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='RemoveButton' and @aria-hidden='false']"
+                    },
+                    "ByToString": "//span[@sm1-id='RemoveButton' and @aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "Alert Dialog Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='OK']"
+                    },
+                    "ByToString": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='OK']"
+                },
+                {
+                    "LogicalName": "Alert Dialog Yes Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='Yes']"
+                    },
+                    "ByToString": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='Yes']"
+                },
+                {
+                    "LogicalName": "Alert Dialog No Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='No']"
+                    },
+                    "ByToString": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='No']"
+                },
+                {
+                    "LogicalName": "Alert Dialog Cancel Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='Cancel']"
+                    },
+                    "ByToString": "//div[@role='alertdialog' and @aria-hidden='false']//span[text()='Cancel']"
+                },
+                {
+                    "LogicalName": "Selection Popup All Checkbox",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALSELECTPOPUP']//span[@class='x-column-header-checkbox']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALSELECTPOPUP']//span[@class='x-column-header-checkbox']"
+                },
+                {
+                    "LogicalName": "Alert Dialog Message Box",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog'][@aria-hidden='false']//div[@sm1-id='messageboxmessage']"
+                    },
+                    "ByToString": "//div[@role='alertdialog'][@aria-hidden='false']//div[@sm1-id='messageboxmessage']"
+                },
+                {
+                    "LogicalName": "Today Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-datepicker-default')][@aria-hidden='false']//span[text()='Today']"
+                    },
+                    "ByToString": "//div[contains(@class,'x-datepicker-default')][@aria-hidden='false']//span[text()='Today']"
+                },
+                {
+                    "LogicalName": "OK Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='SM1OkButton'][@aria-hidden='false']"
+                    },
+                    "ByToString": "//span[@sm1-id='SM1OkButton'][@aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "Error Popup",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Error']/ancestor::div[contains(@class,'x-message-box')][@aria-hidden='false']"
+                    },
+                    "ByToString": "//div[text()='Error']/ancestor::div[contains(@class,'x-message-box')][@aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "Error Popup Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Error']/ancestor::div[contains(@class,'x-message-box')][@aria-hidden='false']//span[text()='OK']"
+                    },
+                    "ByToString": "//div[text()='Error']/ancestor::div[contains(@class,'x-message-box')][@aria-hidden='false']//span[text()='OK']"
+                },
+                {
+                    "LogicalName": "Grid Filter Popup Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(text(),'Column:')]/ancestor::div[contains(@class,'sm1-popup')]//span[text()='OK']"
+                    },
+                    "ByToString": "//div[contains(text(),'Column:')]/ancestor::div[contains(@class,'sm1-popup')]//span[text()='OK']"
+                },
+                {
+                    "LogicalName": "Status Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='workFlowStatus']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='workFlowStatus']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Change Status Cancel Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='SM1CancelButton']"
+                    },
+                    "ByToString": "//span[@sm1-id='SM1CancelButton']"
+                },
+                {
+                    "LogicalName": "Status Row",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//td[@class='x-form-radio-group']//label[contains(@data-ref,'boxLabelEl')]"
+                    },
+                    "ByToString": "//td[@class='x-form-radio-group']//label[contains(@data-ref,'boxLabelEl')]"
+                },
+                {
+                    "LogicalName": "Accept Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_ACCEPT']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_ACCEPT']"
+                },
+                {
+                    "LogicalName": "Match Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='GUIClaim.MATCH_TOAGGR_Button']"
+                    },
+                    "ByToString": "//span[@sm1-id='GUIClaim.MATCH_TOAGGR_Button']"
+                },
+                {
+                    "LogicalName": "Gui Configurator Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='TLBCONFIGURATORBUTTON']"
+                    },
+                    "ByToString": "//a[@sm1-id='TLBCONFIGURATORBUTTON']"
+                },
+                {
+                    "LogicalName": "Switched On Gui Configurator",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='GUICONTAINER'][contains(@class,'configurationOn')]"
+                    },
+                    "ByToString": "//div[@sm1-id='GUICONTAINER'][contains(@class,'configurationOn')]"
+                },
+                {
+                    "LogicalName": "Side Panel Settings Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-toolbar')]//span[contains(@class,'toolbar-spanner')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-toolbar')]//span[contains(@class,'toolbar-spanner')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{text}' and @data-ref='btnInnerEl']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Top Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//*[text()='{text}' and contains(@class,'x-tab-inner')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Generic Drop Down Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{Field}:']//ancestor::label/following-sibling::div//div[@class='sm1-triggers']//div[contains(@id,'trigger-select') or contains(@id,'trigger-picker')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "Field",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Generic Drop Down Value",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[text()='{value}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Generic Drop Down Selected Value",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{value}:']//ancestor::label/following-sibling::div//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Generic Drop Down Value Containing",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[contains(text(),'{value}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "List",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[text()='{text}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Input By Label Name",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()=\"{label}:\"]/ancestor::label/following-sibling::div//*[@role='combobox' or @role='textbox' or @type='text']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "label",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Selection Popup Checkbox",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{value}']/ancestor::td/preceding-sibling::td//div[contains(@class,'x-grid-checkcolumn-cell-inner')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Selection Popup Checkbox Contains",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(text(),'{value}')]/ancestor::td/preceding-sibling::td//div"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Calendar Year Selector",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[text()='{month}' and contains(@class,'x-monthpicker-item-inner')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "month",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "CalendarDayPickerButton",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//td[contains(@aria-label,'{month}')]//div[text()='{day}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "month",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "day",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Selection Popup Cancel Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{popupName}']/ancestor::div[@role='dialog']//span[text()='Cancel']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "popupName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Selection Popup Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{popupName}']/ancestor::div[@role='dialog']//span[text()='OK']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "popupName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Side Panel Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'{tabName}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "tabName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Segmented Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='TLBSEGMENTEDBUTTON']//span[text()='{buttonText}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "buttonText",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Horizontal Panel Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[contains(@class,'x-tab-default-top')][@aria-hidden='false']//span[text()='{tabName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "tabName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Mandatory Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//img[@class='mandatoryIcon'][not(contains(@style,'none'))]//following-sibling::span[contains(text(),'{fieldName}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "fieldName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Status",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//td[@class='x-form-radio-group']//label[contains(@data-ref,'boxLabelEl') and text()='{status}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "status",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Sub Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[contains(@sm1-id,'SUB')]//span[text()='{tabName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "tabName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Popup",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{popupName}']/ancestor::div[@role='dialog']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "popupName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Text",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{text}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Trigger By Field Name",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{Field}:']//ancestor::label/following-sibling::div//div[@class='sm1-triggers']//div[contains(@id,'trigger-open')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "Field",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Radio Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//label[text()='{text}']/preceding-sibling::span[contains(@class,'x-form-radio')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Checked Radio Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'x-form-cb-checked')]//label[text()='{text}']/preceding-sibling::span[contains(@class,'x-form-radio')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{elementField}//ancestor::div[@sm1-id][contains(@class,'sm1dateperiod')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "elementField",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Sub Tab Add Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='{subtabName}']//a[@sm1-id='ACTION_add']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "subtabName",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Login",
+            "Locators": [
+                {
+                    "LogicalName": "Username Field",
+                    "SeleniumBy": {
+                        "Mechanism": "css selector",
+                        "Criteria": "#user\\-name"
+                    },
+                    "ByToString": "user-name"
+                },
+                {
+                    "LogicalName": "Password Field",
+                    "SeleniumBy": {
+                        "Mechanism": "css selector",
+                        "Criteria": "#password"
+                    },
+                    "ByToString": "password"
+                },
+                {
+                    "LogicalName": "Login Button",
+                    "SeleniumBy": {
+                        "Mechanism": "css selector",
+                        "Criteria": "#login\\-button"
+                    },
+                    "ByToString": "login-button"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Navmenu",
+            "Locators": [
+                {
+                    "LogicalName": "Menu Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='homeToolbarMenuBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='homeToolbarMenuBTN']"
+                },
+                {
+                    "LogicalName": "View Complete Menu",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='mainMenuViewCompleteBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='mainMenuViewCompleteBTN']"
+                },
+                {
+                    "LogicalName": "Menu Search Bar",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='mainmenucontainer']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='mainmenucontainer']//input"
+                },
+                {
+                    "LogicalName": "Summary Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Summary')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Summary')]"
+                },
+                {
+                    "LogicalName": "Shell Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Shell')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Shell')]"
+                },
+                {
+                    "LogicalName": "Asset Store Check Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Asset Store Check')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Asset Store Check')]"
+                },
+                {
+                    "LogicalName": "Products Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Products')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Products')]"
+                },
+                {
+                    "LogicalName": "Close Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[contains(@sm1-id,'CLOSEBUTTON')]"
+                    },
+                    "ByToString": "//a[contains(@sm1-id,'CLOSEBUTTON')]"
+                },
+                {
+                    "LogicalName": "Refresh button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_refresh'][@aria-hidden='false']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_refresh'][@aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "General Info Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'General Info')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'General Info')]"
+                },
+                {
+                    "LogicalName": "Toolbar Close Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='homeToolbarCloseBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='homeToolbarCloseBTN']"
+                },
+                {
+                    "LogicalName": "Save Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='TLBSAVEBUTTON'][@aria-hidden='false']"
+                    },
+                    "ByToString": "//a[@sm1-id='TLBSAVEBUTTON'][@aria-hidden='false']"
+                },
+                {
+                    "LogicalName": "Edit Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Edit' and @data-ref='btnInnerEl']"
+                    },
+                    "ByToString": "//span[text()='Edit' and @data-ref='btnInnerEl']"
+                },
+                {
+                    "LogicalName": "View Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='View' and @data-ref='btnInnerEl']"
+                    },
+                    "ByToString": "//span[text()='View' and @data-ref='btnInnerEl']"
+                },
+                {
+                    "LogicalName": "Update Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='UPDATE' and @data-ref='btnInnerEl']"
+                    },
+                    "ByToString": "//span[text()='UPDATE' and @data-ref='btnInnerEl']"
+                },
+                {
+                    "LogicalName": "Agreement ID Increment Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='twoActTxtBoxAgreementID']//div[contains(@class,'sm1textboxactiontriggerplus')]"
+                    },
+                    "ByToString": "//div[@sm1-id='twoActTxtBoxAgreementID']//div[contains(@class,'sm1textboxactiontriggerplus')]"
+                },
+                {
+                    "LogicalName": "Toolbar Status Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODSTATUS']//input"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODSTATUS']//input"
+                },
+                {
+                    "LogicalName": "Confirm Order Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Confirm order']//ancestor::a"
+                    },
+                    "ByToString": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Confirm order']//ancestor::a"
+                },
+                {
+                    "LogicalName": "Cancel Order Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Cancel order']//ancestor::a"
+                    },
+                    "ByToString": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Cancel order']//ancestor::a"
+                },
+                {
+                    "LogicalName": "Print Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Print']//ancestor::a"
+                    },
+                    "ByToString": "//a[@sm1-id][@aria-hidden = 'false']//span[text()='Print']//ancestor::a"
+                },
+                {
+                    "LogicalName": "Anomaly Report Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Anomaly report')]"
+                    },
+                    "ByToString": "//div[contains(@class,'sm1-sidetab-bt')]//span[contains(text(),'Anomaly report')]"
+                },
+                {
+                    "LogicalName": "Balance Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_BALANCE']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_BALANCE']"
+                },
+                {
+                    "LogicalName": "Links Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='LogicalNavCtrl.NAVIGATORLINKS_Button']"
+                    },
+                    "ByToString": "//span[@sm1-id='LogicalNavCtrl.NAVIGATORLINKS_Button']"
+                },
+                {
+                    "LogicalName": "Matched Claims Promotions Links Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@data-qtip='Matched Claims - Promotions']"
+                    },
+                    "ByToString": "//a[@data-qtip='Matched Claims - Promotions']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Select Page",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='mainMenuGroupsContainer']//span[text()='{page}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "page",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Select Page",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='mainMenuGroupsContainer']//label[text()='{division}']//following::div//span[text()='{page}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "division",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "page",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Toolbar Page Name",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'homeToolbarLabelBTN']//span[text()='{pageName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "pageName",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Claims Page",
+            "Locators": [
+                {
+                    "LogicalName": "New Claim Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALNEWCLAIMPOPUP']//span[@sm1-id='SM1OkButton']//span[@data-ref='btnInnerEl']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALNEWCLAIMPOPUP']//span[@sm1-id='SM1OkButton']//span[@data-ref='btnInnerEl']"
+                },
+                {
+                    "LogicalName": "Amount Text Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='numNetAmount']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='numNetAmount']//input"
+                },
+                {
+                    "LogicalName": "Customer Open Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='customerSelector']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='customerSelector']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Customer Document Type TextField",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='cmbDocType']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='cmbDocType']//input"
+                },
+                {
+                    "LogicalName": "Document ID Link",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//*[@class='sm1-column-link']"
+                    },
+                    "ByToString": "//*[@class='sm1-column-link']"
+                },
+                {
+                    "LogicalName": "Document ID Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DOCUMENTID']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='DOCUMENTID']//input"
+                },
+                {
+                    "LogicalName": "Payable Amount Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_MATCHTOPAYABLE']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_MATCHTOPAYABLE']"
+                },
+                {
+                    "LogicalName": "Promo ID Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_MATCHTOPAYABLE_AGG1']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_MATCHTOPAYABLE_AGG1']"
+                },
+                {
+                    "LogicalName": "Promo ID Mechanics Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG2']//a"
+                    },
+                    "ByToString": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG2']//a"
+                },
+                {
+                    "LogicalName": "Reason Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG3']//a"
+                    },
+                    "ByToString": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG3']//a"
+                },
+                {
+                    "LogicalName": "Promo Mechanics Product Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG4']//a"
+                    },
+                    "ByToString": "//div[@sm1-id='ACTION_MATCHTOPAYABLE_AGG4']//a"
+                },
+                {
+                    "LogicalName": "Customer Document Number TextField",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtDocNr']//div[contains(@id,'sm1textbox')][contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtDocNr']//div[contains(@id,'sm1textbox')][contains(@id,'inputEl')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Hier. level side panel",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='FILTER_PANEL']//div[text()='{hier}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "hier",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Customer code table",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(text(),'{item}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "item",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Matchings Table Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//table[contains(@id,'record')]//td//div[contains(text(),'{value}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "value",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "UserProfile",
+            "Locators": [
+                {
+                    "LogicalName": "Home Toolbar User Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='homeToolbarUserBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='homeToolbarUserBTN']"
+                },
+                {
+                    "LogicalName": "Change Group Division Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='homeToolbarGRPDIVBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='homeToolbarGRPDIVBTN']"
+                },
+                {
+                    "LogicalName": "OK Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "Alert Dialog Yes Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role='alertdialog']//span[text()='Yes']"
+                    },
+                    "ByToString": "//div[@role='alertdialog']//span[text()='Yes']"
+                },
+                {
+                    "LogicalName": "User Code Input",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='User Code:']/ancestor::label/following-sibling::div//input"
+                    },
+                    "ByToString": "//span[text()='User Code:']/ancestor::label/following-sibling::div//input"
+                },
+                {
+                    "LogicalName": "User Code DropDown Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODE']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='CODE']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "User Description Text",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='USR_DESCRIPTION']"
+                    },
+                    "ByToString": "//span[@sm1-id='USR_DESCRIPTION']"
+                },
+                {
+                    "LogicalName": "About Kantar",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='homeToolbarABOUTAPPBTN']"
+                    },
+                    "ByToString": "//div[@sm1-id='homeToolbarABOUTAPPBTN']"
+                },
+                {
+                    "LogicalName": "Application Version",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class='sm1-version']"
+                    },
+                    "ByToString": "//div[@class='sm1-version']"
+                },
+                {
+                    "LogicalName": "Close About Pop Up Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALABOUTPOPUP']//div[contains(@class, 'sm1-close-tool')]"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALABOUTPOPUP']//div[contains(@class, 'sm1-close-tool')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "User Code Drop Down",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[contains(text(),'{userCode}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "userCode",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Asset Store Check",
+            "Locators": [
+                {
+                    "LogicalName": "Details Section",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Details']"
+                    },
+                    "ByToString": "//div[text() = 'Details']"
+                },
+                {
+                    "LogicalName": "Details Section Expand Panel button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Details']//ancestor::div[contains(@id,'panel')]//div[@data-qtip = 'Expand panel']"
+                    },
+                    "ByToString": "//div[text() = 'Details']//ancestor::div[contains(@id,'panel')]//div[@data-qtip = 'Expand panel']"
+                },
+                {
+                    "LogicalName": "Details Section Collapse Panel button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Details']//ancestor::div[contains(@id,'panel')]//div[@data-qtip = 'Collapse panel']"
+                    },
+                    "ByToString": "//div[text() = 'Details']//ancestor::div[contains(@id,'panel')]//div[@data-qtip = 'Collapse panel']"
+                },
+                {
+                    "LogicalName": "HQ notes field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'DESHQNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id = 'DESHQNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                },
+                {
+                    "LogicalName": "Preparation notes field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'PREPNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id = 'PREPNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                },
+                {
+                    "LogicalName": "Notes field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'DESNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id = 'DESNOTE']//div[@data-ref = 'inputWrap']//textarea"
+                },
+                {
+                    "LogicalName": "Last visit notes field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'PREVNOTES']//div[@data-ref = 'inputWrap']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id = 'PREVNOTES']//div[@data-ref = 'inputWrap']//textarea"
+                },
+                {
+                    "LogicalName": "Time spent on activity label",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//label[contains(text(),'Time spent on activity')]"
+                    },
+                    "ByToString": "//label[contains(text(),'Time spent on activity')]"
+                },
+                {
+                    "LogicalName": "Objective flag",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='FLGOBJECTIVE']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='FLGOBJECTIVE']//input"
+                },
+                {
+                    "LogicalName": "Previous Objective flag",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='FLGPREVIOUSOBJECTIVE']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='FLGPREVIOUSOBJECTIVE']//input"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "General Info Tab",
+            "Locators": [
+                {
+                    "LogicalName": "Assortment Desciption",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'DESASSORTMENT']//div[@role='textbox']"
+                    },
+                    "ByToString": "//div[@sm1-id = 'DESASSORTMENT']//div[@role='textbox']"
+                },
+                {
+                    "LogicalName": "Assortment Status Code Drop Down",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODSTATUS']//div[@class='sm1-triggers']//div"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODSTATUS']//div[@class='sm1-triggers']//div"
+                },
+                {
+                    "LogicalName": "Assortment Status Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODSTATUS']//input"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODSTATUS']//input"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Select Assortment Status Code",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@id,'sm1combo')]//ul//li[text() = '{status}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "status",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Summary Tab Page",
+            "Locators": [
+                {
+                    "LogicalName": "Order Number Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'NUMORD']//div[@data-componentid][text()]"
+                    },
+                    "ByToString": "//div[@sm1-id = 'NUMORD']//div[@data-componentid][text()]"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Advanced Pricing Books",
+            "Locators": [
+                {
+                    "LogicalName": "Copy Advanced Pricing Books Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id = 'ACTION_COPYCNV']"
+                    },
+                    "ByToString": "//a[@sm1-id = 'ACTION_COPYCNV']"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Claims Page",
+            "Locators": [
+                {
+                    "LogicalName": "Customer Holder",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Rebates Code Textfield",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtID']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtID']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Agreement Code field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtAgrCode']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtAgrCode']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Agreement Code Label",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Agreement Code:']"
+                    },
+                    "ByToString": "//span[text()='Agreement Code:']"
+                },
+                {
+                    "LogicalName": "Agreement Description field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtAgrDes']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtAgrDes']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Agreement ID Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='twoActTxtBoxAgreementID']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='twoActTxtBoxAgreementID']//input"
+                },
+                {
+                    "LogicalName": "New Rebate Classification Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CLASSIFICATION']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='CLASSIFICATION']//input"
+                },
+                {
+                    "LogicalName": "Description field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtDesc']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtDesc']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Status Arrow Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='wfState_GENERAL']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='wfState_GENERAL']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Settlements Claims Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='SUBTAB_SETTLEMENTS_CLAIMS']"
+                    },
+                    "ByToString": "//a[@sm1-id='SUBTAB_SETTLEMENTS_CLAIMS']"
+                },
+                {
+                    "LogicalName": "Payable Amount Textfield",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtPayableAmount']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='txtPayableAmount']//input"
+                },
+                {
+                    "LogicalName": "Update Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='btnUpdateSettlementsandClaims']"
+                    },
+                    "ByToString": "//span[@sm1-id='btnUpdateSettlementsandClaims']"
+                },
+                {
+                    "LogicalName": "Settlements Claims Update Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='btnUpdateSettlementsandClaims']//span[text()='Update']"
+                    },
+                    "ByToString": "//span[@sm1-id='btnUpdateSettlementsandClaims']//span[text()='Update']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Customer Code Table",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[contains(text(),'{item}')])[1]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "item",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Balances Page",
+            "Locators": [
+                {
+                    "LogicalName": "Customer Open Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='customerSelector']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='customerSelector']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Balance Selector Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id='GUIBalance.Selector_Button']"
+                    },
+                    "ByToString": "//span[@sm1-id='GUIBalance.Selector_Button']"
+                },
+                {
+                    "LogicalName": "Balance ID Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='TxtBalanceID']"
+                    },
+                    "ByToString": "//div[@sm1-id='TxtBalanceID']"
+                },
+                {
+                    "LogicalName": "Balance Year Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CmbYear']"
+                    },
+                    "ByToString": "//div[@sm1-id='CmbYear']"
+                },
+                {
+                    "LogicalName": "Customer Selector",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='customerSelector']"
+                    },
+                    "ByToString": "//div[@sm1-id='customerSelector']"
+                },
+                {
+                    "LogicalName": "Supplier Selector",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='supplierSelector']"
+                    },
+                    "ByToString": "//div[@sm1-id='supplierSelector']"
+                },
+                {
+                    "LogicalName": "Amount Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='AmountTotal']"
+                    },
+                    "ByToString": "//div[@sm1-id='AmountTotal']"
+                },
+                {
+                    "LogicalName": "Amount Payable Selector Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ACTION_BALANCETOPAYABLE']"
+                    },
+                    "ByToString": "//div[@sm1-id='ACTION_BALANCETOPAYABLE']"
+                },
+                {
+                    "LogicalName": "Promo Selector Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ACTION_BALANCETOPAYABLE']"
+                    },
+                    "ByToString": "//div[@sm1-id='ACTION_BALANCETOPAYABLE']"
+                },
+                {
+                    "LogicalName": "Currency Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='Currency']"
+                    },
+                    "ByToString": "//div[@sm1-id='Currency']"
+                },
+                {
+                    "LogicalName": "Description Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='Description']"
+                    },
+                    "ByToString": "//div[@sm1-id='Description']"
+                },
+                {
+                    "LogicalName": "Mod On Behalf Of Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODUSRMOD']"
+                    },
+                    "ByToString": "//div[@sm1-id='CODUSRMOD']"
+                },
+                {
+                    "LogicalName": "Modified By Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODUSRMODREAL']"
+                    },
+                    "ByToString": "//div[@sm1-id='CODUSRMODREAL']"
+                },
+                {
+                    "LogicalName": "Modification Date Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DTEMOD']"
+                    },
+                    "ByToString": "//div[@sm1-id='DTEMOD']"
+                },
+                {
+                    "LogicalName": "On Behalf Of Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODUSRMOD']"
+                    },
+                    "ByToString": "//div[@sm1-id='CODUSRMOD']"
+                },
+                {
+                    "LogicalName": "Created By Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODUSRCREREAL']"
+                    },
+                    "ByToString": "//div[@sm1-id='CODUSRCREREAL']"
+                },
+                {
+                    "LogicalName": "Creation Date Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DTECRE']"
+                    },
+                    "ByToString": "//div[@sm1-id='DTECRE']"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "AvailableFieldsTabPage",
+            "Locators": [
+                {
+                    "LogicalName": "Configurable Object Reference Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='configObj']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='configObj']//input"
+                },
+                {
+                    "LogicalName": "Configurable Object Reference Open Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='configObj']//div[contains(@id,'trigger-open')]"
+                    },
+                    "ByToString": "//div[@sm1-id='configObj']//div[contains(@id,'trigger-open')]"
+                },
+                {
+                    "LogicalName": "Textbox Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='textbox']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='textbox']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Combo Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='combo']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='combo']//input"
+                },
+                {
+                    "LogicalName": "Available Fields Date Picker Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='dtp']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='dtp']//input"
+                },
+                {
+                    "LogicalName": "Date Picker Calendar Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='dtp']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='dtp']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Text Action Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='textboxAction']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='textboxAction']//input"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "FieldValidationTabPage",
+            "Locators": [
+                {
+                    "LogicalName": "Mandatory Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='mandatorytextbox']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='mandatorytextbox']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "DatePicker Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='dtp11']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='dtp11']//input"
+                },
+                {
+                    "LogicalName": "Field Validation Date Picker Calendar Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='dtp11']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='dtp11']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Force On Uppercase Validation Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='txtForceUppercase']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='txtForceUppercase']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Combo Field Mandatory Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[contains(text(),'Combo')]//preceding-sibling::img[@class='mandatoryIcon'][not(contains(@style,'none'))]"
+                    },
+                    "ByToString": "//span[contains(text(),'Combo')]//preceding-sibling::img[@class='mandatoryIcon'][not(contains(@style,'none'))]"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "General Info Tab Page",
+            "Locators": [
+                {
+                    "LogicalName": "Num 1 Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='num1']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='num1']//input"
+                },
+                {
+                    "LogicalName": "D2 Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='des2']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id='des2']//textarea"
+                },
+                {
+                    "LogicalName": "D2 Disclosure Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='des2']//a"
+                    },
+                    "ByToString": "//div[@sm1-id='des2']//a"
+                },
+                {
+                    "LogicalName": "Edit Value Popup Textarea",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALSIMPLESECTION']//textarea"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALSIMPLESECTION']//textarea"
+                },
+                {
+                    "LogicalName": "D1 Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='des1']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='des1']//div[contains(@id,'inputEl')]"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "TransactionalDataTabPage",
+            "Locators": [
+                {
+                    "LogicalName": "Progressive Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='prgId']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='prgId']//input"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "CockpitPage",
+            "Locators": [
+                {
+                    "LogicalName": "MechanicsViewAllButton",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CARD_MECHANICS']//a[@sm1-id='ACTION_VIEWALL']"
+                    },
+                    "ByToString": "//div[@sm1-id='CARD_MECHANICS']//a[@sm1-id='ACTION_VIEWALL']"
+                },
+                {
+                    "LogicalName": "Sell In Date",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DATE_SELLIN']//input[@class='sm1-startDate']"
+                    },
+                    "ByToString": "//div[@sm1-id='DATE_SELLIN']//input[@class='sm1-startDate']"
+                },
+                {
+                    "LogicalName": "Sell In End Date",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DATE_SELLIN']//input[@class='sm1-endDate']"
+                    },
+                    "ByToString": "//div[@sm1-id='DATE_SELLIN']//input[@class='sm1-endDate']"
+                },
+                {
+                    "LogicalName": "Sell Out Date",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DATE_SELLOUT']//input[@class='sm1-startDate']"
+                    },
+                    "ByToString": "//div[@sm1-id='DATE_SELLOUT']//input[@class='sm1-startDate']"
+                },
+                {
+                    "LogicalName": "Sell Out End Date",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DATE_SELLOUT']//input[@class='sm1-endDate']"
+                    },
+                    "ByToString": "//div[@sm1-id='DATE_SELLOUT']//input[@class='sm1-endDate']"
+                },
+                {
+                    "LogicalName": "Description",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='PROMO_DESCRIPTION']//div[contains(@id,'inputEl')]"
+                    },
+                    "ByToString": "//div[@sm1-id='PROMO_DESCRIPTION']//div[contains(@id,'inputEl')]"
+                },
+                {
+                    "LogicalName": "Promo Workflow Status Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='PROMO_WORKFLOW_STATUS']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='PROMO_WORKFLOW_STATUS']//div[@class='sm1-triggers']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Mechanics CheckBox",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='GridContainer']//div[text()='{text}']/../..//td[contains(@data-columnid,'sm1gridcheckboxcolumn')]//div[@class='x-grid-cell-inner ']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "ProductsPage",
+            "Locators": [
+                {
+                    "LogicalName": "Ok Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "Promo Create WhatIf Text",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Create What if:']/ancestor::label/following-sibling::div//div[@role='textbox']"
+                    },
+                    "ByToString": "//span[text()='Create What if:']/ancestor::label/following-sibling::div//div[@role='textbox']"
+                },
+                {
+                    "LogicalName": "Promo What If Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@data-qtip='Promotional What If']"
+                    },
+                    "ByToString": "//div[@data-qtip='Promotional What If']"
+                },
+                {
+                    "LogicalName": "Promo Create WhatIf Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Create What-If']/ancestor::span[@data-ref='btnWrap']/following-sibling::div"
+                    },
+                    "ByToString": "//span[text()='Create What-If']/ancestor::span[@data-ref='btnWrap']/following-sibling::div"
+                },
+                {
+                    "LogicalName": "Promo Confirm WhatIf Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Confirm What-If']/ancestor::span[@data-ref='btnWrap']/following-sibling::div"
+                    },
+                    "ByToString": "//span[text()='Confirm What-If']/ancestor::span[@data-ref='btnWrap']/following-sibling::div"
+                },
+                {
+                    "LogicalName": "Product Grid Allocation DropDown",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='COMBO_ACTION_PRODUCT_GRID_WORK_MODE']//div[contains(@class,'x-form-trigger-default')]"
+                    },
+                    "ByToString": "//a[@sm1-id='COMBO_ACTION_PRODUCT_GRID_WORK_MODE']//div[contains(@class,'x-form-trigger-default')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Product Level",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'FILTER_SECTION_LEVPRODUCT']//div[text() = '{level}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "level",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Host Product Code",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = '{code}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "code",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "What If Description",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@class='x-grid-cell-inner ' and text()='{description}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "description",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "ProfitAndLossPage",
+            "Locators": [
+                {
+                    "LogicalName": "Profit And Loss Refresh Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Promo Total / Current']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//a[@sm1-id='ACTION_FETCH']"
+                    },
+                    "ByToString": "//span[text()='Promo Total / Current']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//a[@sm1-id='ACTION_FETCH']"
+                },
+                {
+                    "LogicalName": "Profit And Loss Retailer Refresh Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Action / Current']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//a[@sm1-id='ACTION_FETCH']"
+                    },
+                    "ByToString": "//span[text()='Action / Current']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//a[@sm1-id='ACTION_FETCH']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Profit And Loss Refresh Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{Field}']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//a[@sm1-id='ACTION_FETCH']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "Field",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Profit Loss Drop Down Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Total Promo Discount ']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//span[text()='{Field}:']//ancestor::label/following-sibling::div//div[@class='sm1-triggers']//div[contains(@class,'sm1selecttrigger')][1]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "Field",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Profit Loss Retailer Drop Down Trigger",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Retail Sales value']/ancestor::div[contains(@class,'x-panel SM1_LogicalPL')]//span[text()='{Field}:']//ancestor::label/following-sibling::div//div[@class='sm1-triggers']//div[contains(@class,'sm1selecttrigger')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "Field",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PromoActionsPage",
+            "Locators": [
+                {
+                    "LogicalName": "Promo Add Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Products' and contains(@class, 'x-tab-inner')]/ancestor::div[@role='tablist']/following-sibling::div//span[contains(@class, 'toolbar-add')]"
+                    },
+                    "ByToString": "//span[text()='Products' and contains(@class, 'x-tab-inner')]/ancestor::div[@role='tablist']/following-sibling::div//span[contains(@class, 'toolbar-add')]"
+                },
+                {
+                    "LogicalName": "Contractor Menu Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "OK Customer Code Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "OK Customer Code Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALNEWPROMOACTIONPOPUP']//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALNEWPROMOACTIONPOPUP']//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "Products Tab",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='TAB_H5_PRODUCTS']"
+                    },
+                    "ByToString": "//div[@sm1-id='TAB_H5_PRODUCTS']"
+                },
+                {
+                    "LogicalName": "ReEvaluate Anomalies Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_REEVALUATE_ANOMALIES']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_REEVALUATE_ANOMALIES']"
+                },
+                {
+                    "LogicalName": "Anomalies Rows",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CHECKSET']/ancestor::div[@sm1-id='GridContainer']//table"
+                    },
+                    "ByToString": "//div[@sm1-id='CHECKSET']/ancestor::div[@sm1-id='GridContainer']//table"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Hier. level Side Panel",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='FILTER_PANEL']//div[text()='{hier}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "hier",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Customer Code Table",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[contains(text(),'{item}')])[1]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "item",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PromoPlanCalendarPage",
+            "Locators": [
+                {
+                    "LogicalName": "Contractor Menu Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='CUSTOMER']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "OK Customer Code Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALAVANCEDENTITYSELECTORPOPUP']//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "OK Customer Code Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALNEWPROMOACTIONPOPUP']//span[@sm1-id='SM1OkButton']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALNEWPROMOACTIONPOPUP']//span[@sm1-id='SM1OkButton']"
+                },
+                {
+                    "LogicalName": "Remove Scenario Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Remove Existing Scenario']/parent::a[@aria-disabled='false']"
+                    },
+                    "ByToString": "//span[text()='Remove Existing Scenario']/parent::a[@aria-disabled='false']"
+                },
+                {
+                    "LogicalName": "Active Scenario",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(text(),'Active Scenario:')]"
+                    },
+                    "ByToString": "//div[contains(text(),'Active Scenario:')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Hier. level Side Panel",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='FILTER_PANEL']//div[text()='{hier}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "hier",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Customer Code Table",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[contains(text(),'{item}')])[1]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "item",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Promo Product Under Tier",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{tier}']/ancestor::div[@class='x-grid-item-container']//table//span[text()='{productName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "tier",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "productName",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PromoPlanPage",
+            "Locators": [
+                {
+                    "LogicalName": "Segment Responsibility",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_SEGMENTRESPONSIBILITY']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_SEGMENTRESPONSIBILITY']"
+                },
+                {
+                    "LogicalName": "Product Level",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='PROD_SEGM_LEVELS']"
+                    },
+                    "ByToString": "//div[@sm1-id='PROD_SEGM_LEVELS']"
+                },
+                {
+                    "LogicalName": "None Dropdown Value",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[text()=' - None']"
+                    },
+                    "ByToString": "//li[text()=' - None']"
+                },
+                {
+                    "LogicalName": "Actions Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//*[text()='Actions']"
+                    },
+                    "ByToString": "//*[text()='Actions']"
+                },
+                {
+                    "LogicalName": "Base Scenario Description Cell",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Base Scenario']/parent::td/preceding-sibling::td[contains(@class,'x-grid-cell-sm1gridtextcolumn')]//div"
+                    },
+                    "ByToString": "//div[text()='Base Scenario']/parent::td/preceding-sibling::td[contains(@class,'x-grid-cell-sm1gridtextcolumn')]//div"
+                },
+                {
+                    "LogicalName": "Active Scenario Description Cell",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[text()='Active']/parent::td/preceding-sibling::td[contains(@class,'x-grid-cell-sm1gridtextcolumn')]//div)[1]"
+                    },
+                    "ByToString": "(//div[text()='Active']/parent::td/preceding-sibling::td[contains(@class,'x-grid-cell-sm1gridtextcolumn')]//div)[1]"
+                },
+                {
+                    "LogicalName": "Promo Plan Scenario Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_ACT_H5_PROMOPLANSCENARIOS']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_ACT_H5_PROMOPLANSCENARIOS']"
+                },
+                {
+                    "LogicalName": "Promo Copy Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//a[@sm1-id='ACTION_PROMOCOPY']"
+                    },
+                    "ByToString": "//a[@sm1-id='ACTION_PROMOCOPY']"
+                },
+                {
+                    "LogicalName": "Selected Scenario",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='SelectedScenarioChangeBase']"
+                    },
+                    "ByToString": "//div[@sm1-id='SelectedScenarioChangeBase']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Product Level DropDown",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//li[contains(text(),'{level}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "level",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Calendar Promo Plan",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//table//td//div[contains(@class, 'promo-token') and descendant::div[text() = '{promoDescription}']])[1]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "promoDescription",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Active Scenario Drop Down",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//li[contains(text(), '{scenario}')])[last()]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "scenario",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "ProductsGroupPage",
+            "Locators": [
+                {
+                    "LogicalName": "Code Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODPG']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='CODPG']//input"
+                },
+                {
+                    "LogicalName": "Code Field Number Generator Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODPG']//div[contains(@id,'sm1textboxactiontrigger') and not(@style)]"
+                    },
+                    "ByToString": "//div[@sm1-id='CODPG']//div[contains(@id,'sm1textboxactiontrigger') and not(@style)]"
+                },
+                {
+                    "LogicalName": "Code Field Clear Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODPG']//div[contains(@id,'clear')]"
+                    },
+                    "ByToString": "//div[@sm1-id='CODPG']//div[contains(@id,'clear')]"
+                },
+                {
+                    "LogicalName": "Macro Type Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='CODTYPPG']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='CODTYPPG']//input"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "New Assortment Pop Up",
+            "Locators": [
+                {
+                    "LogicalName": "New Assortments Pop Up Menu",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALNEWASSORTMENTPOPUP']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALNEWASSORTMENTPOPUP']"
+                },
+                {
+                    "LogicalName": "Assortment Type Drop Down",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODASSORTMENTTYPE']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODASSORTMENTTYPE']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Assortment Type Drop Down Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODASSORTMENTTYPE']//input"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODASSORTMENTTYPE']//input"
+                },
+                {
+                    "LogicalName": "Assortment Customer Node Drop Down",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'CODPARTY']//div[@class='sm1-triggers']//div[contains(@id,'sm1entityselector')][contains(@class,'sm1selecttrigger')]"
+                    },
+                    "ByToString": "//div[@sm1-id = 'CODPARTY']//div[@class='sm1-triggers']//div[contains(@id,'sm1entityselector')][contains(@class,'sm1selecttrigger')]"
+                },
+                {
+                    "LogicalName": "Add New Assortment Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id = 'AddButton']"
+                    },
+                    "ByToString": "//span[@sm1-id = 'AddButton']"
+                },
+                {
+                    "LogicalName": "New Assortment Validity Period",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='ASSOVALIDITYPERIOD']//div[contains(@id,'trigger-picker')]"
+                    },
+                    "ByToString": "//div[@sm1-id='ASSOVALIDITYPERIOD']//div[contains(@id,'trigger-picker')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Assortment Type Checkbox",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//label[contains(text(),'{assortmenttype}')]//ancestor::div[contains(@id,'radiofield')]//span//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "assortmentType",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Assortment Type Drop Down option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div//ul//li[text()='{assortmentTypeOption}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "assortmentTypeOption",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Gui Configurator Popup",
+            "Locators": [
+                {
+                    "LogicalName": "Flattened Tree Tab Search Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='flattenedTreeNavSection']//input"
+                    },
+                    "ByToString": "//div[@sm1-id='flattenedTreeNavSection']//input"
+                },
+                {
+                    "LogicalName": "Flattened Tree Tab Search Field Clear Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='flattenedTreeNavSection']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='flattenedTreeNavSection']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Gui Configurator Popup",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALGUICONFIGURATOR']"
+                    },
+                    "ByToString": "//div[@sm1-id='LOGICALGUICONFIGURATOR']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Flattened Tree Tab Item",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='flattenedTreeNavSection']//span[@class='x-tree-node-text '][text()='{label}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "label",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Flattened Tree Tab Arrow Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='flattenedTreeNavSection']//span[text()='{label}']//ancestor::tr//div[contains(@class,'x-tree-expander')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "label",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "New Sales Order Popup",
+            "Locators": [
+                {
+                    "LogicalName": "New Order pop up",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'New Order']//ancestor::div[@sm1-id]"
+                    },
+                    "ByToString": "//div[text() = 'New Order']//ancestor::div[@sm1-id]"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Reference Doc Detail Popup",
+            "Locators": [
+                {
+                    "LogicalName": "Date 1 Calendar Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DTE1']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='DTE1']//div[@class='sm1-triggers']"
+                },
+                {
+                    "LogicalName": "Date 2 Calendar Icon",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='DTE2']//div[@class='sm1-triggers']"
+                    },
+                    "ByToString": "//div[@sm1-id='DTE2']//div[@class='sm1-triggers']"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Save Popup",
+            "Locators": [
+                {
+                    "LogicalName": "Save Changes?",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='Save changes?']"
+                    },
+                    "ByToString": "//div[text()='Save changes?']"
+                },
+                {
+                    "LogicalName": "Warning",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//div[text() = 'Warning']"
+                    },
+                    "ByToString": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//div[text() = 'Warning']"
+                },
+                {
+                    "LogicalName": "Yes Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='Yes']"
+                    },
+                    "ByToString": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='Yes']"
+                },
+                {
+                    "LogicalName": "No Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='No']"
+                    },
+                    "ByToString": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='No']"
+                },
+                {
+                    "LogicalName": "Cancel Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='Cancel']"
+                    },
+                    "ByToString": "//div[@role = 'alertdialog'][@aria-hidden = 'false']//span[text()='Cancel']"
+                }
+            ],
+            "LocatorMethods": []
+        },
+        {
+            "Name": "Customer Shell",
+            "Locators": [
+                {
+                    "LogicalName": "OK Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='OK']"
+                    },
+                    "ByToString": "//span[text()='OK']"
+                },
+                {
+                    "LogicalName": "Cancel Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='Cancel']"
+                    },
+                    "ByToString": "//span[text()='Cancel']"
+                },
+                {
+                    "LogicalName": "Aggrid Column Header",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//span[@ref='agLabel'])"
+                    },
+                    "ByToString": "(//span[@ref='agLabel'])"
+                },
+                {
+                    "LogicalName": "Clear Month Filter",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@sm1-tr='[FLT_MONTH]']//div[@class='sm1-triggers']//div[contains(@id,'clear')])"
+                    },
+                    "ByToString": "(//div[@sm1-tr='[FLT_MONTH]']//div[@class='sm1-triggers']//div[contains(@id,'clear')])"
+                },
+                {
+                    "LogicalName": "Month Filter Dropdown",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@sm1-tr='[FLT_MONTH]']//div[@class='sm1-triggers']//div[contains(@id,'trigger-select')])"
+                    },
+                    "ByToString": "(//div[@sm1-tr='[FLT_MONTH]']//div[@class='sm1-triggers']//div[contains(@id,'trigger-select')])"
+                },
+                {
+                    "LogicalName": "AGGrid Row Items",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@ref='eLeftContainer']//div[@row-id]"
+                    },
+                    "ByToString": "//div[@ref='eLeftContainer']//div[@row-id]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Custom User Select",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{userCode}']/parent::td/preceding-sibling::td[contains(@class,'checkbox')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "userCode",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Aggrid Column Header",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@ref='agLabel'][contains(text(),'{aggridLabelHeader}')]//ancestor::div[@ref='eHeaderContainer']//div[contains(@col-id,'aggridLabelHeader')]//span[@ref = 'eText'][text() = '{aggridColHeader}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "aggridLabelHeader",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "aggridColHeader",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Clear {filter}",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@sm1-tr='{filter}']//div[@class='sm1-triggers']//div[contains(@id,'clear')])"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "filter",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "{filter} Dropdown",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@sm1-tr='{filter}']//div[@class='sm1-triggers']//div[contains(@id,'trigger-select')])"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "filter",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Aggrid Pop Up Value Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{fieldName}']//ancestor::div[@sm1-id]//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "fieldName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Aggrid Filter Text {fieldName}",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-tr='{fieldName}']//div[@data-ref='inputWrap']//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "fieldName",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "IBP Document Summary",
+            "Locators": [],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Custom Section",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//td[text()='{sectionName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "sectionName",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "AGGrid",
+            "Locators": [
+                {
+                    "LogicalName": "AggridLocator",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@aria-hidden='false']//div[@class = 'x-panel sm1-tablepanel x-fit-item x-panel-default']//div[@class = 'ag-root ag-unselectable ag-layout-normal']"
+                    },
+                    "ByToString": "//div[@aria-hidden='false']//div[@class = 'x-panel sm1-tablepanel x-fit-item x-panel-default']//div[@class = 'ag-root ag-unselectable ag-layout-normal']"
+                },
+                {
+                    "LogicalName": "AGGrid Input Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@ref='eCenterViewport']//div[@role='gridcell' and contains(@col-id,'WM2')]"
+                    },
+                    "ByToString": "//div[@ref='eCenterViewport']//div[@role='gridcell' and contains(@col-id,'WM2')]"
+                },
+                {
+                    "LogicalName": "Grid Input Fields",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@ref='eCenterViewport']//div[@role='gridcell' and contains(@col-id,'WM2')]"
+                    },
+                    "ByToString": "//div[@ref='eCenterViewport']//div[@role='gridcell' and contains(@col-id,'WM2')]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Row Identifier",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@row-id='{rowIdentifier}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowIdentifier",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Column Identifier {rowIdentifier} {columnIdentifier}",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@row-id='{rowIdentifier}']/div[@col-id='{columnIdentifier}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowIdentifier",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "columnIdentifier",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{itemName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "itemName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text() = '{rowName}']//ancestor::div[@row-id]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{rowText}']//ancestor::div[@ref='eCenterColsClipper']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowText",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[contains(text(),'{rowName1}')]//following::div[contains(@row-id,'{rowName1}')]//span[contains(text(),'{rowName2}')]//ancestor::div[@row-id]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowName1",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "rowName2",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text() = '{colName}']//ancestor::div[@col-id]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "colName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Aggrid Pop Up Value Field",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{fieldName}']//ancestor::div[@sm1-id]//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "fieldName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Aggrid Filter Text {fieldName}",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-tr='{fieldName}']//div[@data-ref='inputWrap']//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "fieldName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Grid Name",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='{GridName}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "GridName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Column Name",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[contains(text(),'{text}')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Basic Grid",
+            "Locators": [
+                {
+                    "LogicalName": "Grid Filters",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='GRID_FR_FILTERS1']"
+                    },
+                    "ByToString": "//div[@sm1-id='GRID_FR_FILTERS1']"
+                },
+                {
+                    "LogicalName": "First Row",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//table[contains(@id,'record')])[1]//span[@documentKey]"
+                    },
+                    "ByToString": "(//table[contains(@id,'record')])[1]//span[@documentKey]"
+                },
+                {
+                    "LogicalName": "Grid Settings Menu",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[@sm1-id = 'GridContextMenuButton']"
+                    },
+                    "ByToString": "//span[@sm1-id = 'GridContextMenuButton']"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Grid Filter",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{columnName}']//ancestor::div[@role='columnheader']//div[contains(@class,'filter')]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "columnName",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Indexed Row Link",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//table[contains(@id,'record')])[{index}]//span[@class='sm1-column-link']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "index",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Text in Grid",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//span[text()='{text}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Div Text in Grid",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text()='{text}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Select Indexed Row",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//table[contains(@id,'record')]//tr//td[contains(@class,'checkcolumn')]//div[contains(@class,'checkcolumn')])[{index}]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "index",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Grid Settings Menu Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id = 'GridContextMenu'][@aria-hidden = 'false']//a//span[@data-ref][text() = '{option}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "option",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Select Row Checkbox",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//table//tr//td[contains(@class,'x-grid-cell-checkcolumn')]//div//span[@class='x-grid-checkcolumn'])[{index}]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "index",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Text in Navigation Grid",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//table//td//div[text()='{text}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "text",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{rows}[{rowNumber}]//tbody//tr//td[{columnNumber}]//div"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rows",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "rowNumber",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "columnNumber",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{rows}[{row}]//tbody//tr//td[{col}]//div//img"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rows",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "row",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "col",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{rows}[{row}]//tbody//tr//td[{col}]//div"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rows",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "row",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "col",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{rows}[{row}]//tbody//tr//td[{col}]//div//input"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rows",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "row",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "col",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{row}[{rowNum}]//tbody//tr//td"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "row",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "rowNum",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "{rows}[{row}]//tbody//tr//td[{col}]//div[text()]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rows",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "row",
+                            "Type": "System.String"
+                        },
+                        {
+                            "Name": "col",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Table Row",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[@sm1-id='GridContainer']//div[contains(@class,'x-panel-default x-grid')]//tr)[{rowNumber}]//td"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowNumber",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Filter Option",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[@sm1-id='LOGICALTEXTBOXCOLUMNPOPUP']//div[text()='{optionValue}']/../..//div[@class='x-grid-cell-inner x-grid-checkcolumn-cell-inner']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "optionValue",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Customer Master Pop Up Grid",
+            "Locators": [
+                {
+                    "LogicalName": "Customer Master pop up OK Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Customer Master']//ancestor::div//span[@sm1-id = 'SM1OkButton']//span[text()]"
+                    },
+                    "ByToString": "//div[text() = 'Customer Master']//ancestor::div//span[@sm1-id = 'SM1OkButton']//span[text()]"
+                },
+                {
+                    "LogicalName": "Customer Master pop up OK Button",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Customer Master']//ancestor::div//span[@sm1-id = 'SM1CancelButton']//span[text()]"
+                    },
+                    "ByToString": "//div[text() = 'Customer Master']//ancestor::div//span[@sm1-id = 'SM1CancelButton']//span[text()]"
+                }
+            ],
+            "LocatorMethods": [
+                {
+                    "LogicalName": "Customer Master pop up Grid Node",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[text() = 'Customer Master']//ancestor::div[@role='dialog']//table//tbody//tr//td//div[@class='x-grid-cell-inner '][text()='{node}']"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "node",
+                            "Type": "System.String"
+                        }
+                    ]
+                },
+                {
+                    "LogicalName": "Customer Master pop up Row",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "(//div[text() = 'Customer Master']//ancestor::div[@role='dialog']//table//tbody//tr)[{rowNumber}]"
+                    },
+                    "Arguments": [
+                        {
+                            "Name": "rowNumber",
+                            "Type": "System.String"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Sales Order Product Grid",
+            "Locators": [
+                {
+                    "LogicalName": "Sales Order Product Grid Columns",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[@sm1-id][@aria-hidden='false']//div[@class = 'x-column-header-text']//span[@class='x-column-header-text-inner'][text()]"
+                    },
+                    "ByToString": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[@sm1-id][@aria-hidden='false']//div[@class = 'x-column-header-text']//span[@class='x-column-header-text-inner'][text()]"
+                },
+                {
+                    "LogicalName": "Sales Order Product Grid Left Side Rows",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[contains(@class,'x-grid-scrollbar-clipper-locked')]//table"
+                    },
+                    "ByToString": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[contains(@class,'x-grid-scrollbar-clipper-locked')]//table"
+                },
+                {
+                    "LogicalName": "Sales Order Product Grid Right Side Rows",
+                    "SeleniumBy": {
+                        "Mechanism": "xpath",
+                        "Criteria": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[not(contains(@class,'x-focus'))][@class = 'x-grid-view x-grid-with-row-lines x-fit-item x-grid-view-default x-scroller']//table"
+                    },
+                    "ByToString": "//div[contains(@class,'SM1_LogicalOrderRowGrid')]//div[not(contains(@class,'x-focus'))][@class = 'x-grid-view x-grid-with-row-lines x-fit-item x-grid-view-default x-scroller']//table"
+                }
+            ],
+            "LocatorMethods": []
+        }
+    ]
+}
